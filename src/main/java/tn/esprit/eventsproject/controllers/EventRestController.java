@@ -37,6 +37,7 @@ public class EventRestController {
         System.out.println("MODIFYING THE PROJECT FOR GIT PURPOSE" + date_debut);
         System.out.println("MODIFYING THE PROJECT FOR GIT PURPOSE" + date_debut);
         System.out.println("ON BRANCH USER MANAGEMENT" + date_debut);
+        System.out.println("USING GIT ON INTELIJ" + date_debut);
         return eventServices.getLogisticsDates(date_debut,date_fin);
     }
 
