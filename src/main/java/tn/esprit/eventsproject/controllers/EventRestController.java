@@ -31,11 +31,12 @@ public class EventRestController {
     @PutMapping("/addAffectLog/{description}")
     public Logistics addAffectLog(@RequestBody Logistics logistics,@PathVariable("description") String descriptionEvent){
         return eventServices.addAffectLog(logistics,descriptionEvent);
-    }git
+    }
     @GetMapping("/getLogs/{d1}/{d2}")
     public List<Logistics> getLogistiquesDates (@PathVariable("d1") LocalDate date_debut, @PathVariable("d2") LocalDate date_fin){
         System.out.println("MODIFYING THE PROJECT FOR GIT PURPOSE" + date_debut);
-        System.out.println("MODIFYING THE PROJECT FOR GIT PURPOSE 2" + date_debut);
+        System.out.println("MODIFYING THE PROJECT FOR GIT PURPOSE" + date_debut);
+        System.out.println("ON BRANCH USER MANAGEMENT" + date_debut);
         return eventServices.getLogisticsDates(date_debut,date_fin);
     }
 
